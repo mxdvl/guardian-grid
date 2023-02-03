@@ -1,0 +1,79 @@
+---
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import { grid } from "../lib/grid";
+
+import { from } from "@guardian/source-foundations";
+
+console.log(from.desktop);
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Container>
+      <h1>Spotlight</h1>
+
+      <ul class="cards">
+        <li>A</li><li>B</li><li>C</li>
+      </ul>
+
+      <div class="extra">Crosswords</div>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  @media screen and (max-width: 739px) {
+    .mainmedia figcaption {
+      display: none;
+    }
+  }
+</style>
+
+<style
+  is:inline
+  set:html={`
+	h1 {
+		${grid.column.centre}
+	}
+
+  .cards {
+    ${grid.column.centre}
+    background: pink;
+    padding: 0.5rem;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .extra {
+    display: none;
+  }
+
+	${from.phablet} {
+	}
+
+	${from.tablet} {
+	}
+
+	${from.desktop} {
+    .cards {
+      ${grid.between("centre-column-start", "right-column-end")}
+    }
+	}
+
+	${from.leftCol} {
+		h1 {
+      ${grid.column.left}
+    }
+
+    .cards {
+      grid-row: span 2;
+    }
+
+    .extra {
+      display: block;
+      ${grid.column.left}
+    }
+	}
+`}
+></style>

@@ -1,0 +1,302 @@
+---
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
+import { grid } from "../lib/grid";
+
+import { from } from "@guardian/source-foundations";
+
+console.log(from.desktop);
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Container>
+      <figure class="mainmedia">
+        <picture>
+          <img
+            src="https://i.guim.co.uk/img/media/5f8222c4c217a2df906794042b3c3d94764dfc83/0_0_5760_3840/master/5760.jpg?width=965&quality=45&dpr=2&s=none"
+            alt="The famous view of the Duomo in Florence."
+          />
+        </picture>
+        <figcaption>
+          <span
+            ><svg width="18" height="13" viewBox="0 0 18 13"
+              ><path
+                d="M18 3.5v8l-1.5 1.5h-15l-1.5-1.5v-8l1.5-1.5h3.5l2-2h4l2 2h3.5l1.5 1.5zm-9 7.5c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5z"
+              ></path></svg
+            ></span
+          ><span>The famous view of the Duomo in Florence.</span> Photograph: Sorin
+          Colac/Alamy
+        </figcaption>
+      </figure>
+
+      <h3 class="kicker">Travel</h3>
+      <h1 style={grid.column.centre}>
+        A solo trip around Europe, with my travel phobia? I only wish I’d done
+        it sooner
+      </h1>
+
+      <p class="standfirst">
+        My first trip alone was daunting, but the romance and beauty of Paris,
+        Florence and Rome helped me conquer my fears
+      </p>
+
+      <svg
+        class="lines"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="13"
+        viewBox="0 0 1300 13"
+        preserveAspectRatio="none"
+        stroke="#DCDCDC"
+        stroke-width="1"
+        aria-hidden="true"
+        focusable="false"
+        class="dcr-194w08h"
+      >
+        <line x1="0" x2="1300" y1="0.5" y2="0.5"></line>
+        <line x1="0" x2="1300" y1="4.5" y2="4.5"></line>
+        <line x1="0" x2="1300" y1="8.5" y2="8.5"></line>
+        <line x1="0" x2="1300" y1="12.5" y2="12.5"></line></svg
+      >
+
+      <aside class="byline">
+        Daniel Lavelle
+        <br />
+        <time>Sat 28 Jan 2023 18.00 AEDT</time>
+      </aside>
+
+      <div class="body">
+        <p class="first" style={grid.column.centre}>
+          I’ve never been to Paris before, but it’s living up to its reputation
+          so far. I only arrived a few minutes ago and have parked myself in a
+          posh 1920s-style cafe across the road from Gare du Nord, where the
+          Eurostar train deposits Channel-hoppers like me.
+        </p>
+
+        <p>
+          I’m here to begin a three-week grand tour across the continent: from
+          Paris to Naples via Nice, Florence and Rome. I’ve never travelled to
+          mainland Europe before. I haven’t been able to afford it, and even if
+          I’d had the money, anxiety would have kept me home as I suffer from
+          mild travel phobia. So, as well as a holiday, this trip will also be a
+          sort of aversion therapy.
+        </p>
+
+        <p>
+          At the ingeniously named Café du Nord, a waiter in a black waistcoat,
+          bow tie and beret brings my café au lait and croque monsieur on a
+          small round tray, then departs with a nod and a “bon appetit”. It’s
+          all very elegant. I eat, drink, tip, wave au revoir and leave for my
+          hotel, a budget affair near the Bastille.
+        </p>
+
+        <blockquote style={grid.column.centre}>
+          I have to pinch myself: all this distance and beauty for less than £50
+        </blockquote>
+
+        <figure style={grid.column.centre}>
+          <picture
+            ><source
+              srcset="https://i.guim.co.uk/img/media/9a3665d70ea97bbef656bc66d28e1bc9db35853a/0_0_4800_3200/master/4800.jpg?width=620&quality=45&dpr=2&s=none"
+              media="(min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.25), (min-width: 660px) and (min-resolution: 120dpi)"
+            /><img
+              alt="La Promenade des Anglaise in Nice"
+              src="https://i.guim.co.uk/img/media/9a3665d70ea97bbef656bc66d28e1bc9db35853a/0_0_4800_3200/master/4800.jpg?width=445&quality=85&dpr=1&s=none"
+              loading="lazy"
+            /></picture
+          >
+          <figcaption>
+            <span
+              ><svg width="18" height="13" viewBox="0 0 18 13"
+                ><path
+                  d="M18 3.5v8l-1.5 1.5h-15l-1.5-1.5v-8l1.5-1.5h3.5l2-2h4l2 2h3.5l1.5 1.5zm-9 7.5c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5z"
+                ></path></svg
+              ></span
+            ><span>La Promenade des Anglais in Nice.</span> Photograph: Studio Barcelona/Alamy
+          </figcaption>
+        </figure>
+
+        <p>
+          I also visit the Eiffel Tower: it’s just like Blackpool Tower only
+          bigger, and in France. Then I go to see the Mona Lisa in the Louvre –
+          it’s all right, but I don’t really see what all the fuss is about.
+          Tomorrow I leave for Nice.
+        </p>
+
+        <p>
+          The first part of the train journey to Nice is through scorched
+          farmland, but after departing Marseille it takes in spectacular vistas
+          of the French Riviera. To my left, misty mountains fill the horizon,
+          lush vineyards lie trackside, and sandy-walled villas with sun-kissed
+          copper roofs pepper verdant hillsides. On my right, there are clusters
+          of exotic trees – palm, pine and olive. Beyond them is the
+          Mediterranean, shimmering in the sun. I have to pinch myself: all this
+          distance and beauty for less than £50.
+        </p>
+
+        <p>
+          Nice is nice, but that’s as far as it goes. Again, the bus tour is
+          worth doing, but the old town is the thing to see: a collection of
+          pretty buildings where you can spend a fortune in a pretty cafe on a
+          pretty alleyway and look at statues perched in the middle of marble
+          fountains. I then head to the Promenade des Anglais where there are
+          ice-creams, surfing and other coastal pastimes on its pebbled beach.
+        </p>
+
+        <figure class="supporting" data-columns>
+          <picture>
+            <img
+              src="https://i.guim.co.uk/img/media/bd5d287bb7322b11807821b32f084e6d3a5dbc20/0_112_1600_960/master/1600.jpg?width=200&quality=45&dpr=2&s=none"
+              loading="lazy"
+              alt="The author in Place Massena, near the seafront in Nice."
+            />
+          </picture>
+          <figcaption>
+            The author in Place Massena, near the seafront in Nice.
+          </figcaption>
+        </figure>
+
+        <p>
+          If you’re fair-skinned like me, the big drawback about visiting the
+          continent in August is that it’s baking hot. I end up looking like a
+          soggy sundried tomato, which is more demoralising than usual given the
+          number of olive-skinned beauties waltzing about in shorts and vests.
+        </p>
+
+        <p>
+          I’m supposed to be heading to Italy, but I’ve left my phone in the
+          taxi I took to the train station. These days losing your phone is like
+          losing a limb, so I’m panicking and considering visiting the British
+          consulate and calling this whole thing off.
+        </p>
+
+        <p>
+          On the Find Me app on my laptop I watch my phone do circles of nearby
+          Monte Carlo. I resolve to get another cab and instruct the driver to
+          follow my phone icon. Unfortunately, the app is unreliable, so I
+          return to the station and somehow contact Uber and the driver, who
+          returns my phone hours later. That’s five hours of my life and £200
+          I’m never getting back, but finally I board the train to Genoa, and
+          from there change to another heading south into the Tuscan hills.
+        </p>
+      </div>
+
+      <div id="most-viewed">MOST VIEWED</div>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  article {
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  picture {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 3;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  /* p.first::first-letter {
+    font-size: 4rem;
+  } */
+
+  @media screen and (max-width: 739px) {
+    .mainmedia figcaption {
+      display: none;
+    }
+  }
+</style>
+
+<style
+  is:inline
+  set:html={`
+	.mainmedia {
+		${grid.column.all}
+	}
+
+	.lines {
+		${grid.column.all}
+	}
+
+	.standfirst {
+		${grid.column.centre};
+	}
+
+	.body {
+		${grid.column.centre};
+	}
+	
+	#most-viewed {
+		display: none;
+		background-color: #ccc;
+	}
+
+	.kicker, .byline {
+		${grid.column.centre};
+	}
+
+	${from.phablet} {
+		.mainmedia {
+			${grid.column.centre};
+			grid-row-start: 4;
+		}
+		.lines {
+			${grid.column.centre};
+		}
+	}
+
+  [data-columns] {
+    --columns: 12;
+    width: calc(60px * var(--columns) + 20px * (var(--columns) - 1));
+  }
+
+	${from.tablet} {
+		figure.supporting {
+			float: left;
+      padding-right: 1rem;
+      --columns: 4;
+		}
+	}
+
+	${from.desktop} {
+		#most-viewed {
+			display: block;
+			${grid.column.right};
+			grid-row-start: 2;
+			grid-row-end: span 11;
+		}
+	}
+
+	${from.leftCol} {
+		.mainmedia {
+			${grid.between("centre-column-start", "right-column-end")};
+			grid-row-start: 2;
+		}
+
+		#most-viewed {
+			grid-row-start: 3;
+			grid-row-end: span 8;
+		}
+
+		.kicker {
+			${grid.column.left};
+		}
+		
+		.byline {
+			${grid.column.left};
+		}
+	}
+`}
+></style>
